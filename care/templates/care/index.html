@@ -157,7 +157,7 @@
         <div class="swiper-wrapper">
           <!-- 산책친구 아이템 -->
           {% for article in care %}
-          {% if article.writing_down == 0 %}
+          {% if article.writing_down == false %}
           <div class="swiper-slide">
             <!-- card-item -->
             <div class="card__item">
@@ -230,11 +230,11 @@
         </a>
       </div>
       <!-- Swiper -->
-      {% comment %} <div class="swiper mySwiper">
+      <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <!-- slide 최근매칭 아이템 -->
           {% for article in care %}
-          {% if article.writing_down == 1 %}
+          {% if article.writing_down == true %}
           <div class="swiper-slide">
             <!-- card-item -->
             <article class="card__item">
@@ -290,7 +290,7 @@
           {% endif %}
           {% endfor %}
         </div>
-      </div> {% endcomment %}
+      </div>
     </div> 
   </section>
   {% comment %} 여기서부터 정상 {% endcomment %}
